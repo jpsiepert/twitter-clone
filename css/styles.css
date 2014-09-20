@@ -137,7 +137,11 @@ body {
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
-			}
+			/*}
+			.over-count {
+				color: red; !important
+			}*/
+		}
 
 /* TWEET */
 .tweet {
@@ -146,6 +150,10 @@ body {
 	border-bottom: 1px solid #e8e8e8;
 	min-height: 60px;
 	border-radius: 6px;
+}
+.tweet:hover .tweet-actions {
+	visibility: visible;
+	opacity: 1;
 }
 
 	.tweet .avatar {
@@ -168,6 +176,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		visibility: hidden;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
